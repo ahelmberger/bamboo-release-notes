@@ -1,0 +1,140 @@
+{
+    "expand": "changes,metadata,plan,vcsRevisions,artifacts,comments,labels,jiraIssues,stages",
+    "link": {
+        "href": "http://bamboo.mydomain.com:8085/rest/api/latest/result/PROJECT-KEY-28",
+        "rel": "self"
+    },
+    "plan": {
+        "shortName": "MYPLAN",
+        "shortKey": "KEY",
+        "type": "chain",
+        "enabled": true,
+        "link": {
+            "href": "http://bamboo.mydomain.com:8085/rest/api/latest/plan/PROJECT-KEY",
+            "rel": "self"
+        },
+        "key": "PROJECT-KEY",
+        "name": "PROJECT - MYPLAN",
+        "planKey": {
+            "key": "PROJECT-KEY"
+        }
+    },
+    "planName": "MYPLAN",
+    "projectName": "PROJECT",
+    "buildResultKey": "PROJECT-KEY-28",
+    "lifeCycleState": "Finished",
+    "id": 239272178,
+    "buildStartedTime": "2015-08-13T13:41:38.850+02:00",
+    "prettyBuildStartedTime": "Thu, 13 Aug, 01:41 PM",
+    "buildCompletedTime": "2015-08-13T13:50:14.863+02:00",
+    "buildCompletedDate": "2015-08-13T13:50:14.863+02:00",
+    "prettyBuildCompletedTime": "Thu, 13 Aug, 01:50 PM",
+    "buildDurationInSeconds": 516,
+    "buildDuration": 516012,
+    "buildDurationDescription": "8 minutes",
+    "buildRelativeTime": "1 day ago",
+    "vcsRevisionKey": "50e1e3ebf6d64bd645126dfe1abfd84f25a4cfa4",
+    "vcsRevisions": {
+        "size": 1,
+        "start-index": 0,
+        "max-result": 1
+    },
+    "buildTestSummary": "79 passed",
+    "successfulTestCount": 79,
+    "failedTestCount": 0,
+    "quarantinedTestCount": 0,
+    "skippedTestCount": 0,
+    "continuable": false,
+    "onceOff": false,
+    "restartable": false,
+    "notRunYet": false,
+    "finished": true,
+    "successful": true,
+    "buildReason": "Changes by <a href=\"http://bamboo.mydomain.com:8085/browse/user/john.doe\">John Doe</a> and <a href=\"http://bamboo.mydomain.com:8085/browse/user/emilia.smith\">Emilia Smith</a>",
+    "reasonSummary": "Changes by <a href=\"http://bamboo.mydomain.com:8085/browse/user/john.doe\">John Doe</a> and <a href=\"http://bamboo.mydomain.com:8085/browse/user/emilia.smith\">Emilia Smith</a>",
+    "artifacts": {
+        "size": 0,
+        "start-index": 0,
+        "max-result": 0
+    },
+    "comments": {
+        "size": 0,
+        "start-index": 0,
+        "max-result": 0
+    },
+    "labels": {
+        "size": 0,
+        "start-index": 0,
+        "max-result": 0
+    },
+    "jiraIssues": {
+        "size": 1,
+        "start-index": 0,
+        "max-result": 1
+    },
+    "stages": {
+        "size": 1,
+        "start-index": 0,
+        "max-result": 1
+    },
+    "changes": {
+        "size": 2,
+        "expand": "change",
+        "change": [{
+            "expand": "files",
+            "author": "Emilia Smith <emilia.smith@mydomain.com>",
+            "userName": "emilia.smith",
+            "fullName": "Emilia Smith",
+            "comment": "Merge pull request #15 in PROJECT/myrepo from feature/JIRAPX-534-My-Awesome-Feature to master\n* commit '15ea55b6808e848834813bb7edde508938c947d4':\n  JIRAPX-534 Adjust some bindings and add more tests",
+            "changesetId": "50e1e3ebf6d64bd645126dfe1abfd84f25a4cfa4",
+            "commitUrl": "http://stash.mydomain.com:7990/projects/myproj/repos/myrepo/commits/50e1e3ebf6d64bd645126dfe1abfd84f25a4cfa4",
+            "date": "2015-08-13T13:41:35.000+02:00",
+            "files": {
+                "size": 0,
+                "start-index": 0,
+                "max-result": 0,
+                "file": []
+            }
+        }, {
+            "expand": "files",
+            "author": "John Doe <john.doe@mydomain.com>",
+            "userName": "john.doe",
+            "fullName": "John Doe",
+            "comment": "JIRAPX-534 Adjust some bindings and add more tests",
+            "changesetId": "15ea55b6808e848834813bb7edde508938c947d4",
+            "commitUrl": "http://stash.mydomain.com:7990/projects/myproj/repos/myrepo/commits/15ea55b6808e848834813bb7edde508938c947d4",
+            "date": "2015-08-13T11:42:59.000+02:00",
+            "files": {
+                "size": 2,
+                "start-index": 0,
+                "max-result": 2,
+                "file": [{
+                    "name": "app/ui/pages/applications/application-details.html",
+                    "revision": "15ea55b6808e848834813bb7edde508938c947d4"
+                }, {
+                    "name": "app/ui/pages/applications/applications.html",
+                    "revision": "15ea55b6808e848834813bb7edde508938c947d4"
+                }]
+            }
+        }],
+        "start-index": 0,
+        "max-result": 2
+    },
+    "metadata": {
+        "size": 0,
+        "start-index": 0,
+        "max-result": 0
+    },
+    "key": "PROJECT-KEY-28",
+    "planResultKey": {
+        "key": "PROJECT-KEY-28",
+        "entityKey": {
+            "key": "PROJECT-KEY"
+        },
+        "resultNumber": 28
+    },
+    "state": "Successful",
+    "buildState": "Successful",
+    "number": 28,
+    "buildNumber": 28
+}

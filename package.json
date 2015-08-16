@@ -1,0 +1,25 @@
+{
+  "name": "bamboo-release-notes",
+  "version": "1.0.0",
+  "description": "Creates release notes in Markdown format from a Bamboo build.",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "author": {
+    "url": "https://github.com/ahelmberger"
+  },
+  "main": "./lib/index.js",
+  "repository": "https://github.com/ahelmberger/bamboo-release-notes.git",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "~3.2.0",
+    "es6-promise": "~3.0.2",
+    "fetch-mock": "~1.5.2",
+    "gulp": "~3.9.0",
+    "gulp-jshint": "~1.11.2",
+    "gulp-mocha": "~2.1.3",
+    "isomorphic-fetch": "~2.1.1",
+    "jshint-stylish": "~2.0.1",
+    "mocha": "~2.2.5"
+  }
+}
