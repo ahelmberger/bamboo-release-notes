@@ -13,9 +13,7 @@ npm install --save bamboo-release-notes
     var bambooReleaseNotes = require('bamboo-release-notes');
 
     bambooReleaseNotes({
-      bambooServer: 'http://bamboo.mydomain.com:8085',
-      bambooUserName: 'john.doe',
-      bambooPassword: 'password',
+      bambooServer: 'http://user:pass@bamboo.mydomain.com:8085',
       buildPlan: 'PLAN-KEY',
       buildNumber: '123'
     }).then(function (result) {

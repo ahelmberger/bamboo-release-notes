@@ -1,6 +1,6 @@
 {
   "name": "bamboo-release-notes",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Creates release notes in Markdown format from a Bamboo build.",
   "scripts": {
     "test": "gulp test"

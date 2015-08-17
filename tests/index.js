@@ -13,7 +13,7 @@ var output = fs.readFileSync(__dirname + '/output.md', 'utf-8').replace(/\r\n/g,
 
 fetchMock.registerRoute([{
   name: 'bamboo',
-  matcher: 'http://bamboo.mydomain.com:8085/rest/api/latest/result/PLAN-KEY/123?os_authType=basic&expand=changes.change.files',
+  matcher: 'http://johndoe:qwerty@bamboo.mydomain.com:8085/rest/api/latest/result/PLAN-KEY/123.json?os_authType=basic&expand=changes.change.files',
   response: { body: input }
 }]);
 
@@ -27,9 +27,7 @@ describe('bamboo-release-notes', function () {
   });
   it('should call the correct bamboo API', function (done) {
     sut({
-      bambooServer: 'http://bamboo.mydomain.com:8085',
-      bambooUserName: 'john.doe',
-      bambooPassword: 'password',
+      bambooServer: 'http://johndoe:qwerty@bamboo.mydomain.com:8085',
       buildPlan: 'PLAN-KEY',
       buildNumber: '123'
     }).then(function (result) {
@@ -38,9 +36,7 @@ describe('bamboo-release-notes', function () {
   });
   it('should create the expected output document', function (done) {
     sut({
-      bambooServer: 'http://bamboo.mydomain.com:8085',
-      bambooUserName: 'john.doe',
-      bambooPassword: 'password',
+      bambooServer: 'http://johndoe:qwerty@bamboo.mydomain.com:8085',
       buildPlan: 'PLAN-KEY',
       buildNumber: '123'
     }).then(function (result) {
